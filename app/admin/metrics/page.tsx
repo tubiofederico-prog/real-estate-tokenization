@@ -82,9 +82,8 @@ export default function MetricsPage() {
       {/* Charts */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Monthly Returns Chart */}
-        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-          <h2 className="text-xl font-bold text-primary-900 mb-4">Retornos Mensuales</h2>
-          <ReturnsChart data={monthlyReturns} height={300} />
+        <div>
+          <ReturnsChart />
           <div className="mt-4 pt-4 border-t border-slate-200">
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div>
@@ -110,9 +109,8 @@ export default function MetricsPage() {
         </div>
 
         {/* Portfolio Distribution Chart */}
-        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
-          <h2 className="text-xl font-bold text-primary-900 mb-4">Distribución de Cartera</h2>
-          <DistributionChart data={portfolioDistribution} height={300} />
+        <div>
+          <DistributionChart />
           <div className="mt-4 pt-4 border-t border-slate-200">
             <p className="text-sm text-slate-600 mb-3 font-medium">Top Proyectos por Peso</p>
             <div className="space-y-2 text-sm">

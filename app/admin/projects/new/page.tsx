@@ -142,19 +142,24 @@ export default function CreateProjectPage() {
                   </select>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                  <Input
-                    label="Nivel de Riesgo"
-                    as="select"
-                    value={formData.riskLevel}
-                    onChange={(e) => handleInputChange('riskLevel', e.target.value)}
-                  />
+                  <div>
+                    <label className="block text-sm font-medium text-primary-900 mb-2">Nivel de Riesgo</label>
+                    <select
+                      value={formData.riskLevel || ''}
+                      onChange={(e) => handleInputChange('riskLevel', e.target.value)}
+                      className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:outline-none focus:border-primary-500"
+                    >
+                      <option value="">Seleccionar</option>
+                      <option value="low">Bajo</option>
+                      <option value="medium">Medio</option>
+                      <option value="high">Alto</option>
+                    </select>
+                  </div>
                   <Input
                     label="Duración (meses)"
                     type="number"
-                    min="1"
-                    value={formData.durationMonths}
+                    value={formData.durationMonths || ''}
                     onChange={(e) => handleInputChange('durationMonths', parseInt(e.target.value))}
-                    required
                   />
                 </div>
               </div>

@@ -17,7 +17,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
   const projectPortfolios = portfolios.filter((p) => p.projectId === params.id);
 
   const [isEditing, setIsEditing] = useState(false);
-  const [formData, setFormData] = useState(
+  const [formData, setFormData] = useState<any>(
     project ? { ...project } : {}
   );
 

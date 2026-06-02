@@ -125,7 +125,7 @@ export default function TransactionsPage() {
           value={formatCurrency(netFlow, 'USD')}
           valueColor={netFlow > 0 ? 'text-emerald-700' : 'text-red-700'}
           trend={netFlow > 0 ? 'up' : 'down'}
-          trendValue={netFlow > 0 ? '+' : ''}{Math.abs((netFlow / (totalInvested + deposits.reduce((s, t) => s + t.amount, 0))) * 100).toFixed(1)}%`}
+          trendValue={`${netFlow > 0 ? '+' : ''}${Math.abs((netFlow / (totalInvested + deposits.reduce((s, t) => s + t.amount, 0))) * 100).toFixed(1)}%`}
         />
       </div>
 
