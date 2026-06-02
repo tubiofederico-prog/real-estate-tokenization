@@ -4,6 +4,8 @@
 
 RE Bank es un **prototipo visual premium** de una plataforma fintech B2B para tokenización de proyectos inmobiliarios. Permite a inversores comprar tokens equivalentes a participaciones en desarrollos inmobiliarios, gestionar carteras, recibir rentabilidades y acceder a fondos diversificados.
 
+**Estado:** ✅ Totalmente funcional y desplegado en Vercel
+
 ### 🎯 Características Principales
 
 - **Portal del Inversor:** Dashboard, marketplace de proyectos, cartera, wallet, reportes, fondos
