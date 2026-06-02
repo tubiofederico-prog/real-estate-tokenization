@@ -37,7 +37,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className="text-5xl font-bold mb-6">Banco Inmobiliario Digital</h2>
-            <p className="text-xl text-slate-200 mb-8">
+            <p className="text-xl text-slate-100 mb-8">
               Democratiza la inversión inmobiliaria. Invierte desde USD 100 en proyectos
               tokenizados, fondos inmobiliarios y activos alternativos de alto retorno.
             </p>
@@ -54,23 +54,23 @@ export default function LandingPage() {
           {/* Key Metrics */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-16">
             <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm">
-              <p className="text-slate-300 text-sm font-medium mb-2">Capital Tokenizado</p>
+              <p className="text-slate-200 text-sm font-medium mb-2">Capital Tokenizado</p>
               <p className="text-3xl font-bold text-white">
                 {formatCompact(dashboardMetrics.totalCapitalTokenized)}
               </p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm">
-              <p className="text-slate-300 text-sm font-medium mb-2">Proyectos Activos</p>
+              <p className="text-slate-200 text-sm font-medium mb-2">Proyectos Activos</p>
               <p className="text-3xl font-bold text-white">{dashboardMetrics.activeProjects}</p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm">
-              <p className="text-slate-300 text-sm font-medium mb-2">Inversores</p>
+              <p className="text-slate-200 text-sm font-medium mb-2">Inversores</p>
               <p className="text-3xl font-bold text-white">
                 {formatCompact(dashboardMetrics.registeredInvestors)}
               </p>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-6 backdrop-blur-sm">
-              <p className="text-slate-300 text-sm font-medium mb-2">Rentabilidad Promedio</p>
+              <p className="text-slate-200 text-sm font-medium mb-2">Rentabilidad Promedio</p>
               <p className="text-3xl font-bold text-emerald-400">
                 {dashboardMetrics.averageReturn.toFixed(1)}%
               </p>
@@ -87,21 +87,21 @@ export default function LandingPage() {
             <div className="p-8 border border-slate-200 rounded-xl hover:shadow-lg transition-shadow">
               <Building2 className="w-12 h-12 text-emerald-600 mb-4" />
               <h4 className="text-xl font-bold text-primary-900 mb-2">Proyectos Verificados</h4>
-              <p className="text-slate-600">
+              <p className="text-slate-800">
                 Todos nuestros proyectos inmobiliarios pasan auditoría legal y técnica rigurosa.
               </p>
             </div>
             <div className="p-8 border border-slate-200 rounded-xl hover:shadow-lg transition-shadow">
               <Zap className="w-12 h-12 text-cyan-600 mb-4" />
               <h4 className="text-xl font-bold text-primary-900 mb-2">Tokenización Segura</h4>
-              <p className="text-slate-600">
+              <p className="text-slate-800">
                 Tokens respaldados por activos reales con smart contracts auditados.
               </p>
             </div>
             <div className="p-8 border border-slate-200 rounded-xl hover:shadow-lg transition-shadow">
               <TrendingUp className="w-12 h-12 text-gold-500 mb-4" />
               <h4 className="text-xl font-bold text-primary-900 mb-2">Rentabilidad Competitiva</h4>
-              <p className="text-slate-600">
+              <p className="text-slate-800">
                 Retornos de 8-20% anual según el proyecto y perfil de riesgo.
               </p>
             </div>
@@ -138,7 +138,7 @@ export default function LandingPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary-900 text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="text-3xl font-bold mb-6">Comienza tu Inversión Hoy</h3>
-          <p className="text-xl text-slate-300 mb-8">
+          <p className="text-xl text-slate-200 mb-8">
             Únete a miles de inversores que ya están diversificando en real estate tokenizado.
           </p>
           <Button variant="secondary" size="lg" onClick={() => router.push('/investor/dashboard')}>
@@ -148,7 +148,7 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary-950 text-slate-400 py-8 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-primary-950 text-slate-500 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
