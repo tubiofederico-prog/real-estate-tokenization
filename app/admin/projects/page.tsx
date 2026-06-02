@@ -10,7 +10,7 @@ import { formatCurrency } from '@/lib/utils';
 export default function ProjectsManagement() {
   const router = useRouter();
 
-  const columns = [
+  const columns: any[] = [
     {
       key: 'name',
       label: 'Proyecto',
@@ -25,13 +25,13 @@ export default function ProjectsManagement() {
     {
       key: 'totalAmount',
       label: 'Monto',
-      align: 'right',
+      align: 'right' as const,
       render: (value: number) => <span className="font-bold">{formatCurrency(value, 'USD')}</span>,
     },
     {
       key: 'raisedAmount',
       label: 'Recaudado',
-      align: 'right',
+      align: 'right' as const,
       render: (value: number, row: any) => (
         <div>
           <p className="font-bold text-primary-900">{formatCurrency(value, 'USD')}</p>
@@ -42,7 +42,7 @@ export default function ProjectsManagement() {
     {
       key: 'investorsCount',
       label: 'Inversores',
-      align: 'center',
+      align: 'center' as const,
       render: (value: number) => <span className="font-bold">{value}</span>,
     },
     {
